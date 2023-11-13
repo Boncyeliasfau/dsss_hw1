@@ -13,7 +13,7 @@ class TestMathGame(unittest.TestCase):
             self.assertTrue(min_val <= rand_num <= max_val)
 
     def test_Random_operation(self):
-        # Check to see if the random operations fall into the +, -, or *
+        # Check to see if the random operations fall into the +, -, or *
         for _ in range(1000):
              rand_op = Random_operation()
              self.assertTrue(rand_op=='+'or rand_op == '-' or rand_op == '*')
@@ -29,5 +29,5 @@ class TestMathGame(unittest.TestCase):
                 PROBLEM, ANSWER = Operation(num1, num2, operator)
                 self.assertTrue(expected_problem== PROBLEM and expected_answer == ANSWER)
 
-if _name_ == "_main_":
-    unittest.main()
+if __name__ == "__main__":
+    unittest.main()
